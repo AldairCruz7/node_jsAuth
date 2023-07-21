@@ -17,8 +17,9 @@ app.use('/api/v1/sign-up', signUp);
 
 // @todo: generar un token jwt seguro para la sesión del usuario
 app.use('/api/v1/login', login);
+
 // @todo: completar las rutas de profile
-app.use('/api/v1/profile', profile);
+app.use('/api/v1/profile/', profile);
 
 app.get('/', async (req, res) => {
   res.send('Proyecto de auntentificación con JWT');

@@ -7,5 +7,5 @@ import { updateUser } from './update-profile.js';
 export const profile = Router();
 
 profile.use('/', viewUser);
-profile.use('/', deleteUser);
-profile.use('/', updateUser);
+profile.use('/delete', deleteUser);
+profile.use('/update', updateUser);
